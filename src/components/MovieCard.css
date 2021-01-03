@@ -1,0 +1,5 @@
+.movieCard_media {
+  height: 500px;
+  object-fit: contain;
+  transition: transform 0.5s ease-in-out;
+}

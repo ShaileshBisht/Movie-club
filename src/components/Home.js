@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
+import MovieCard from "./MovieCard";
 import Box from "@material-ui/core/Box";
 import API_KEY from "../SecretKey/secretKey";
 import axios from "axios";
+import Grid from "@material-ui/core/Grid";
 
 function Home() {
   const [movieData, setMovieData] = useState([]);
@@ -32,6 +34,14 @@ function Home() {
       >
         Top Rated Movie
       </Box>
+
+      <Grid justify="space-evenly" container spacing={1}>
+        {movieData.map((item) => (
+          <Grid item xs={12} sm={5} md={4} lg={3} xl={4}>
+            <MovieCard key={item.id} info={item} />
+          </Grid>
+        ))}
+      </Grid>
     </div>
   );
 }
