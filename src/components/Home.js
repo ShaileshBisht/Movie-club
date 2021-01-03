@@ -37,7 +37,7 @@ function Home() {
 
       <Grid justify="space-evenly" container spacing={1}>
         {movieData.map((item) => (
-          <Grid item xs={12} sm={5} md={4} lg={3} xl={4}>
+          <Grid item xs={12} sm={5} md={4} lg={3}>
             <MovieCard key={item.id} info={item} />
           </Grid>
         ))}
