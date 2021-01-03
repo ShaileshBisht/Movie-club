@@ -15,7 +15,7 @@ function Home() {
     const fetchData = async () => {
       await axios
         .get(
-          `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en`
+          `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en`
         )
         .then((data) => setMovieData(data.data.results));
     };
@@ -32,7 +32,7 @@ function Home() {
         letterSpacing={10}
         m={1}
       >
-        Top Rated Movie
+        Top Popular Movie
       </Box>
 
       <Grid justify="space-evenly" container spacing={1}>

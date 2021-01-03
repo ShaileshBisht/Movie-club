@@ -11,7 +11,7 @@ function NavBar() {
 
   return (
     <div className="navBar">
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
           <Typography
             className="navBar_title"
