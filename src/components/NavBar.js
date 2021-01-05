@@ -20,7 +20,9 @@ function NavBar() {
           >
             MovieClub
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" onClick={(e) => history.push("/search")}>
+            Search
+          </Button>
           <Button color="inherit">Login</Button>
           <Button color="inherit">Login</Button>
         </Toolbar>
