@@ -9,3 +9,8 @@
   text-align: center;
   justify-content: space-between;
 }
+
+.movieCard_overview {
+  height: 400px;
+  overflow-y: scroll;
+}

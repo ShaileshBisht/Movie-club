@@ -31,9 +31,19 @@ function MovieCard({ info }) {
               fontFamily="Monospace"
               textAlign="right"
               m={1}
-              className="card_instruction"
             >
               {info.release_date.slice(0, 4)}
+            </Box>
+          </div>
+          <div className="movieCard_overview">
+            <Box
+              fontWeight="fontWeightBold"
+              fontSize={18}
+              textAlign="left"
+              letterSpacing={2}
+              m={1}
+            >
+              {info.overview}
             </Box>
           </div>
         </CardContent>
