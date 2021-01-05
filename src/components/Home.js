@@ -9,8 +9,6 @@ import Grid from "@material-ui/core/Grid";
 function Home() {
   const [movieData, setMovieData] = useState([]);
 
-  console.log(movieData);
-
   useEffect(() => {
     const fetchData = async () => {
       await axios
