@@ -1,3 +1,13 @@
+.movieCard {
+  padding: 10px;
+
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+}
+
 .movieCard_media {
   height: 500px;
   object-fit: contain;
@@ -11,8 +21,25 @@
 }
 
 .movieCard_overview {
+  background-color: black;
+  color: white;
   height: 400px;
   overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 10px;
+  transform: translateX(500px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movieCard_overview1 {
+  height: 390px;
+  overflow: scroll;
+}
+
+.movieCard:hover .movieCard_overview {
+  transform: translateX(0%);
 }
 
 .movieCard_overview::-webkit-scrollbar {
@@ -21,6 +48,16 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .movieCard_overview {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.movieCard_overview1::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.movieCard_overview1 {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }

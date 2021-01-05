@@ -36,15 +36,17 @@ function MovieCard({ info }) {
             </Box>
           </div>
           <div className="movieCard_overview">
-            <Box
-              fontWeight="fontWeightBold"
-              fontSize={18}
-              textAlign="left"
-              letterSpacing={2}
-              m={1}
-            >
-              {info.overview}
-            </Box>
+            <div className="movieCard_overview1">
+              <Box
+                fontWeight="fontWeightRegular"
+                // fontFamily="Monospace"
+                fontSize={18}
+                textAlign="center"
+                m={1}
+              >
+                {info.overview}
+              </Box>
+            </div>
           </div>
         </CardContent>
       </Card>
