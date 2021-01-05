@@ -15,28 +15,27 @@ function MovieCard({ info }) {
           title={info.strDrink}
         />
         <CardContent>
-          <Box
-            fontWeight="fontWeightBold"
-            fontSize={25}
-            textAlign="center"
-            letterSpacing={3}
-            lineHeight={2}
-            m={1}
-          >
-            {info.strDrink}
-          </Box>
-
-          <Box
-            fontWeight="fontWeightRegular"
-            fontSize={18}
-            fontFamily="Monospace"
-            textAlign="center"
-            m={1}
-            fontStyle="oblique"
-            className="card_instruction"
-          >
-            {info.strInstructions}
-          </Box>
+          <div className="movieCard_content">
+            <Box
+              fontWeight="fontWeightBold"
+              fontSize={18}
+              textAlign="left"
+              letterSpacing={2}
+              m={1}
+            >
+              {info.title}
+            </Box>
+            <Box
+              fontWeight="fontWeightBold"
+              fontSize={15}
+              fontFamily="Monospace"
+              textAlign="right"
+              m={1}
+              className="card_instruction"
+            >
+              {info.release_date.slice(0, 4)}
+            </Box>
+          </div>
         </CardContent>
       </Card>
     </div>
