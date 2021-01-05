@@ -4,10 +4,10 @@
 
 .search_input {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .search_input1 {
   width: 70%;
-  font-size: large !important;
-  text-align: center;
 }
