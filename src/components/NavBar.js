@@ -23,8 +23,9 @@ function NavBar() {
           <Button color="inherit" onClick={(e) => history.push("/search")}>
             Search
           </Button>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" onClick={(e) => history.push("/genres")}>
+            Genres
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
