@@ -1,5 +1,5 @@
 .movieCard {
-  padding: 10px;
+  padding: 20px;
 
   overflow: hidden;
 }
@@ -36,6 +36,10 @@
 .movieCard_overview1 {
   height: 390px;
   overflow: scroll;
+}
+
+.card:hover {
+  box-shadow: 5px 8px #888888;
 }
 
 .movieCard:hover .movieCard_overview {
