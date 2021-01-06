@@ -1,3 +1,8 @@
 .genres {
   margin-top: 110px;
 }
+
+.genres_cate {
+  display: flex;
+  justify-content: space-evenly;
+}
