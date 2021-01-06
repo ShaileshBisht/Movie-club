@@ -20,10 +20,18 @@ function NavBar() {
           >
             MovieClub
           </Typography>
-          <Button color="inherit" onClick={(e) => history.push("/search")}>
+          <Button
+            className="navBar_button"
+            color="inherit"
+            onClick={(e) => history.push("/search")}
+          >
             Search
           </Button>
-          <Button color="inherit" onClick={(e) => history.push("/genres")}>
+          <Button
+            className="navBar_button"
+            color="inherit"
+            onClick={(e) => history.push("/genres")}
+          >
             Genres
           </Button>
         </Toolbar>
