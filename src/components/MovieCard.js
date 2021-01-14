@@ -32,7 +32,7 @@ function MovieCard({ info }) {
               textAlign="right"
               m={1}
             >
-              {info.release_date.slice(0, 4)}
+              {info.release_date?.slice(0, 4)}
             </Box>
           </div>
           <div className="movieCard_overview">
