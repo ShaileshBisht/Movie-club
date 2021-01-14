@@ -1,3 +1,7 @@
+https://movie-club-shailesh.netlify.app/
+
+Fully responsive web app made using React + material UI + RESTful API +Multi pages Router. featuring Movie Search and Showing movie by Genres( Action, Horror, Animation, History, Science Fiction ).  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
